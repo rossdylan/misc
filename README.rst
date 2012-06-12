@@ -7,8 +7,8 @@ bin
 ---
 
 - static_serv.py
-  - usage: static_serv.py [path]
-  - Serves a directly statically over port 8081
-  - dependancies:
-    - gevent
-    - static
+ - usage: static_serv.py [path]
+ - Serves a directly statically over port 8081
+ - dependancies:
+  - gevent
+  - static
