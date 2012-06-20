@@ -12,3 +12,10 @@ bin
  - dependancies:
   - gevent
   - static
+
+- to_webserver
+ - usage: to_webserver [file1, file2...]
+ - Uploads stuff to a webserver
+ - dependancies:
+  - pbs
+  - multiprocessing

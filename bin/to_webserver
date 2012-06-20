@@ -1,0 +1,16 @@
+#!/usr/bin/python
+from pbs import scp
+import sys
+from multiprocessing import Pool
+
+def _scp(f):
+    scp("-r", f, "typhon:srv/static/")
+    print "Uploaded {0} to webserver".format(f)
+
+def main():
+    pool = Pool(processes=4)
+    args = sys.argv[1:]
+    pool.map(_scp, args)
+
+if __name__ == "__main__":
+    main()
