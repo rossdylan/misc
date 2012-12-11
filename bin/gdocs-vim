@@ -1,0 +1,3 @@
+#!/bin/bash
+
+google docs edit --title "$@" --editor vim

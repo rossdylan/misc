@@ -7,18 +7,27 @@ bin
 ---
 
 + static_serv.py
- + usage: static_serv.py [path]
- + Serves a directly statically over port 8081
- + dependancies:
-  + gevent
-  + static
+   + usage: static_serv.py [path]
+   + Serves a directly statically over port 8081
+   + dependancies:
+      + gevent
+      + static
 
 + to_webserver
- + usage: to_webserver [file1, file2...]
- + Uploads stuff to a webserver
- + dependancies:
-  + pbs
-  + multiprocessing
+   + usage: to_webserver [file1, file2...]
+   + Uploads stuff to a webserver
+   + dependancies:
+      + pbs
+      + multiprocessing
 
-  + pip_upgrade.sh
-    + upgrade all packages pip knows about
++ pip_upgrade.sh
+   + upgrade all packages pip knows about
+   + dependancies:
+     + python
+     + pip
+
++ remote_task.sh
+   + call taskwarrior from acrossed a ssh connect
+
++ gdocs-vim
+   + use googlecl to edit google docs in vim
